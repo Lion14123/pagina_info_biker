@@ -1,0 +1,203 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BAJIO BIKER FEST</title>
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+            /* Estilo para la imagen superior */
+            .imagen-superior {
+                position: relative; /* Posición relativa para contener elementos absolutamente posicionados */
+                width: 100%;
+                height: auto;
+                object-fit: cover; /* Para asegurar que la imagen cubra el contenedor */
+            }
+
+            /* Estilo para el contenedor del carrusel */
+            .carousel-container {
+                position: absolute; /* Posición absoluta para superponer sobre la imagen de fondo */
+                top: 60%; /* Colocamos en el centro vertical */
+                left: 50%; /* Colocamos en el centro horizontal */
+                transform: translate(-50%, -50%); /* Centramos exactamente el contenedor */
+                z-index: 1000; /* Aseguramos que esté sobre la imagen de fondo */
+                width: 80%; /* Ancho del carrusel */
+                max-width: 600px; /* Ancho máximo */
+                background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar visibilidad */
+                padding: 20px; /* Espaciado interno */
+                border-radius: 10px; /* Bordes redondeados */
+            }
+
+            /* Estilo para el texto del carrusel */
+            .carousel-text {
+                color: white; /* Color del texto */
+                font-size: 18px; /* Tamaño de fuente */
+            }
+
+            /* Estilo para el título grande */
+            .titulo-grande {
+                position: absolute; /* Posición absoluta para superponer sobre la imagen de fondo */
+                top: 20%; /* Posición desde arriba */
+                left: 50%; /* Centrado horizontal */
+                transform: translateX(-50%); /* Centrado horizontal exacto */
+                z-index: 1000; /* Aseguramos que esté sobre la imagen de fondo */
+                color: white; /* Color del texto */
+                font-size: 48px; /* Tamaño grande de fuente */
+                text-align: center; /* Alineación centrada */
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mejor legibilidad */
+            }
+            /*Footer*/
+            .final img{
+            max-width: 8%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            }
+            .final p {
+            margin-top: 10px;
+            color: aliceblue;
+            text-align: center;
+            }
+            .face {    
+                width: 5%;      
+            display: block;
+            margin: 0 auto; 
+            }
+            footer{
+                background-color: black;
+            }    
+            /*Responsivo -----------------------------------------------------------------------------------------*/
+        @media screen and (max-width:764px){
+            .imagen-superior {
+            width: 85vh;
+            height: 100vh;
+            top: 0;
+            object-fit: cover; /* Para asegurar que la imagen cubra el contenedor */
+             /* El contenedor ocupa toda la altura de la ventana */
+            overflow: hidden; /* Para asegurar que no haya desbordamiento */
+            position: relative; 
+        }
+        footer{
+                width: 100%;
+             height:20%;
+             position: absolute;
+             text-align: center;
+             padding: 10px 6px;
+             display: inline-block;
+             top: 89%; 
+             left: 0%; 
+             }
+    }   
+        </style>
+    </head>
+    <body>
+        <!-- Imagen superior (fondo) -->
+        <div class="container-fluid p-0">
+            <img src="media/fondobb.jpeg" alt="Imagen Superior" class="imagen-superior">
+            <h1 class="titulo-grande">ARTISTAS</h1> <!-- Título grande sobre la imagen de fondo -->
+        </div>
+
+        <!-- Contenedor del carrusel -->
+        <div class="carousel-container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="media/A1.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="media/A2.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="media/A3.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="media/A4.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="media/A5.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="media/A6.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="media/A7.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="media/A9.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    
+                    <!-- Agrega más imágenes según necesites -->
+                </div>
+            
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+
+        
+
+        <!-- Encabezado con barra de navegación -->
+        <header class="navbar navbar-expand-md navbar-dark bg-danger py-0 fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="media/BAJIO BIKER FEST FINAL  2023 BLANCO 1 (1).png" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+                    <span class="ms-2">BAJIO BIKER FEST</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#barrademenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="barrademenu"> 
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="inicio.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="evento.html">Evento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="lugar.html">Lugar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="accesos.html">Accesos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- Scripts para el carrusel -->
+        <script>
+            var myCarousel = new bootstrap.Carousel(document.getElementById('carouselExampleIndicators'), {
+                interval: 2000, // Intervalo de cambio de imagen en milisegundos
+                wrap: true // Ciclo continuo del carrusel
+            });
+        </script>
+        <footer>
+            <div class="final">
+                <a href="https://www.instagram.com/bajiobiker/" target="_blank">
+                <img src="media/Ig.png" alt="Descripción de la imagen">
+                </a>
+                <a href="https://www.facebook.com/bajiobiker" target="_blank">
+                <img class="face" src="media/Face.png" alt="Descripción de la imagen">
+                </a>
+                <p>Bajío BikerFest</p>
+            </div>
+            </div>
+        </footer>
+    </body>
+    </html>
+
+
+
